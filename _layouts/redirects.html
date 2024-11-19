@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+  <meta name="author" content="hydai">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:image" content="{{ page.image }}">
+  <meta property="og:site_name" content="hydai">
+  <meta property="og:locale" content="zh_TW">
+  <script>
+    setTimeout(function() {
+      window.location.href = "{{ page.redirect_to }}";
+    }, 500);
+  </script>
+</head>
+<body>
+  <p>重新導向到 (redirect to) <a href="{{ page.redirect_to }}">{{ page.redirect_to }}</a>⋯⋯</p>
+</body>
+</html>
