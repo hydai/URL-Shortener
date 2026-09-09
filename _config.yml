@@ -11,3 +11,7 @@ collections:
   redirects:
     output: true
     permalink: /:path/
+
+exclude:
+  - README.md
+  - LICENSE
