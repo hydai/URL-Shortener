@@ -1,0 +1,20 @@
+version: 2
+updates:
+  # GitHub Actions used by .github/workflows/jekyll.yml, all in one PR per month
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    groups:
+      actions:
+        patterns: ["*"]
+    commit-message:
+      prefix: "ci"
+
+  # Gemfile / Gemfile.lock (jekyll); security updates arrive regardless of schedule
+  - package-ecosystem: "bundler"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    commit-message:
+      prefix: "build"
