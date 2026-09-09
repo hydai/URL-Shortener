@@ -1,11 +1,7 @@
 title: URL shortener
-email: hydai@hyd.ai
-description: >- # this means to ignore newlines until "baseurl:"
-  URL shortener for hyd.ai
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://url.hyd.ai" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: hydai_tw
-github_username:  hydai
+description: URL shortener for hyd.ai
+baseurl: ""
+url: "https://url.hyd.ai"
 
 collections:
   redirects:
