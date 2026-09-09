@@ -15,7 +15,7 @@ collections:
 exclude:
   - README.md
   - LICENSE
-  - _redirects/template.markdown # copy this to add a link; never published
+  - _redirects/template.md # copy this to add a link; never published
 
 defaults:
   - scope:
