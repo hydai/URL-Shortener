@@ -15,3 +15,10 @@ collections:
 exclude:
   - README.md
   - LICENSE
+
+defaults:
+  - scope:
+      path: ""
+      type: redirects
+    values:
+      layout: redirects
