@@ -12,7 +12,7 @@
 {%- endif %}
   <meta property="og:site_name" content="hydai">
   <meta property="og:locale" content="zh_TW">
-  <script>
+  <script data-cfasync="false">
     setTimeout(function() {
       window.location.href = {{ page.redirect_to | jsonify }};
     }, 500);
