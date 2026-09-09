@@ -2,21 +2,21 @@
 <html lang="zh-Hant-TW">
 <head>
   <meta charset="utf-8">
-  <title>{{ page.title }}</title>
-  <meta name="description" content="{{ page.description }}">
+  <title>{{ page.title | escape }}</title>
+  <meta name="description" content="{{ page.description | escape }}">
   <meta name="author" content="hydai">
-  <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:title" content="{{ page.title | escape }}">
+  <meta property="og:description" content="{{ page.description | escape }}">
   <meta property="og:image" content="{{ page.image }}">
   <meta property="og:site_name" content="hydai">
   <meta property="og:locale" content="zh_TW">
   <script>
     setTimeout(function() {
-      window.location.href = "{{ page.redirect_to }}";
+      window.location.href = {{ page.redirect_to | jsonify }};
     }, 500);
   </script>
 </head>
 <body>
-  <p>重新導向到 (redirect to) <a href="{{ page.redirect_to }}">{{ page.redirect_to }}</a>⋯⋯</p>
+  <p>重新導向到 (redirect to) <a href="{{ page.redirect_to | escape }}">{{ page.redirect_to | escape }}</a>⋯⋯</p>
 </body>
 </html>
