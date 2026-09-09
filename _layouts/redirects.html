@@ -7,7 +7,9 @@
   <meta name="author" content="hydai">
   <meta property="og:title" content="{{ page.title | escape }}">
   <meta property="og:description" content="{{ page.description | escape }}">
-  <meta property="og:image" content="{{ page.image }}">
+{%- if page.image %}
+  <meta property="og:image" content="{{ page.image | escape }}">
+{%- endif %}
   <meta property="og:site_name" content="hydai">
   <meta property="og:locale" content="zh_TW">
   <script>
