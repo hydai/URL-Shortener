@@ -11,6 +11,8 @@ collections:
 exclude:
   - README.md
   - LICENSE
+  - AGENTS.md
+  - CLAUDE.md
   - _redirects/template.md # copy this to add a link; never published
 
 defaults:

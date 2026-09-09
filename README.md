@@ -7,6 +7,8 @@ URL 縮網址服務，以方便管理自己的演講投影片與其他需要分�
 2. 填好三個欄位：`title` 與 `description` 是分享時的預覽標題與描述，`redirect_to` 必須是完整的 http(s) 網址。
 3. push 到 `main`，GitHub Actions 會先驗證所有 entry 再部署。
 
+交給 AI agent 做的話，直接說「幫我加一個短網址 ... 指到 ...」即可，Claude Code 與 Codex 都會使用 `.agents/skills/add-redirect/` 的 skill 走同樣的流程。
+
 本機檢查：
 
 ```bash
